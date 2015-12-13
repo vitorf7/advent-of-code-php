@@ -1,0 +1,4 @@
+suites:
+    vfdev_suit:
+        namespace: VFDev
+        psr4_prefix: VFDev
