@@ -83,11 +83,15 @@ class ElevatorIntructorParenthesisSpec extends ObjectBehavior
         $this->getInstructionsCount()->shouldBe(2);
     }
 
-    public function it_should_tell_which_instruction_number_when_it_first_entered_the_basement_floor($elevator)
-    {
-        $this->parseInstructions(')');
-        $this->getInstructionsCount(1);
-        $elevator->goDown()->shouldBeCalledTimes(1);
-        $this->getFirstBasementEntryInstruction()->shouldBe(1);
-    }
+    // public function it_should_tell_which_instruction_number_when_it_first_entered_the_basement_floor(Elevator $elevator)
+    // {
+    //     $this->parseInstructions('())');
+    //     $this->getInstructionsCount()->shouldBe(3);
+
+    //     $elevator->goUp()->shouldBeCalledTimes(1);
+    //     $elevator->goDown()->shouldBeCalledTimes(2);
+
+    //     $elevator->getFloorNumber()->willReturn(-1);
+    //     $this->getFirstBasementEntryInstruction()->shouldReturn(3);
+    // }
 }
